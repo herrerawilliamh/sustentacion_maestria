@@ -1,0 +1,24 @@
+.titulo-imagen{
+    font-size: 1.5rem;
+}
+.fragment.blur {
+    filter: blur(5px);
+  }
+.fragment.blur.visible {
+  filter: none;
+}
+.objetivo-general{
+  font-size: 4rem;
+}
+.objetivos-especificos{
+  font-size: 3rem;
+}
+.imagen-referente{
+  margin-top: 10%;
+}
+.imagen-analisis{
+  margin-top: -8%;
+}
+.imagen-diseno{
+  margin-top: -4%;
+}
