@@ -103,6 +103,7 @@
   },
   "dependencies": {
     "chart.js": "^4.3.2",
+    "reveal.js-notes-pointer": "^0.1.4",
     "reveal.js-tableofcontents": "^1.0.1",
     "reveal.js-toolbar": "^0.2.1"
   }

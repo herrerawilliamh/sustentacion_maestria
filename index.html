@@ -520,7 +520,11 @@
 			// More info about initialization & config:
 			// - https://revealjs.com/initialization/
 			// - https://revealjs.com/config/
-			Reveal.initialize({				
+			Reveal.initialize({	
+				dependencies: [
+					{ src: 'plugin/elapsed-time-bar/elapsed-time-bar.js'},
+					{src: 'node_modules/reveal.js-notes-pointer/notes-pointer.js'}
+				],			
 				width: 1920,
   				height: 1080,
 				margin: 0.04,
@@ -556,6 +560,24 @@
 				// flowchart: {
 				//   curve: 'linear',
 				// },
+				},
+				// - (required) your allotted time for presentation
+				allottedTime: 30 * 60 * 1000, // 3 minutes
+				// - (optional) height of page/time progress bar
+				progressBarHeight: 5,
+				// - (optional) bar color
+				barColor: 'rgb(200,0,0)',
+				// - (optional) bar color when timer is paused
+				pausedBarColor: 'rgba(200,0,0,.6)',
+				notes_pointer: {
+				pointer: {
+				 		size: 15,  // in pixels (scaled like the rest of reveal.js)
+				 		color: 'rgba(255, 0, 0, 0.8)',  // something valid for css background-color
+						key: 'A'
+				 	},
+				 	notes: {
+				 		key: 'S'
+				 	}
 				},
 				// Learn about plugins: https://revealjs.com/plugins/
 				plugins: [ RevealZoom, RevealMarkdown, RevealHighlight, RevealNotes, RevealMenu, RevealMermaid, RevealAttribution ]
