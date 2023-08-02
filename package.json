@@ -1,16 +1,17 @@
 {
+  "homepage":"https://herrerawilliamh.github.io/sustentacion_maestria",
   "name": "pdmg",
   "version": "4.5.0",
   "description": "Sustentación Propuesta Metodológica como Herramienta para el Diseño de Material Educativo Basado en la Gamificación",
-  "homepage": "https://revealjs.com",
-  "subdomain": "revealjs",
   "main": "dist/reveal.js",
   "module": "dist/reveal.esm.js",
   "license": "MIT",
   "scripts": {
     "test": "gulp test",
     "start": "gulp serve",
-    "build": "gulp build"
+    "build": "gulp build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "author": {
     "name": "Hakim El Hattab",
@@ -40,6 +41,7 @@
     "colors": "^1.4.0",
     "core-js": "^3.12.1",
     "fitty": "^2.3.0",
+    "gh-pages": "^5.0.0",
     "glob": "^7.1.7",
     "gulp": "^4.0.2",
     "gulp-autoprefixer": "^8.0.0",

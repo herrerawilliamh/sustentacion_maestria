@@ -1,6 +1,6 @@
 /*!
 * reveal.js 4.5.0
-* https://revealjs.com
+* https://herrerawilliamh.github.io/sustentacion_maestria
 * MIT licensed
 *
 * Copyright (C) 2011-2023 Hakim El Hattab, https://hakim.se
